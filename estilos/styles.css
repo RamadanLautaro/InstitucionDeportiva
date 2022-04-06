@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header,
+section,
+footer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgb(0, 0, 28);
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(to right, darkblue, blue);
+    color: white;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__marca {
+    color: white;
+    height: 50px;
+    margin-left: 25px;
+    padding-top: 10px;
+}
+
+.header__navbar ul {
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.header__navbar ul li {
+    display: inline;
+    background: darkblue;
+    border-radius: 35px;
+}
+
+.header__navbar ul li a {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+/* SECCION PLANTEL */
+
+#plantel {
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.plantel__imagen {
+    background-color: cyan;
+    border-radius: 15px;
+    box-shadow: 15px 5px 10px #48529944;
+    width: 860px;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+
+/* SECCION ESTADIO */
+
+#estadio {
+    height: 400px;
+}
+
+.estadio__card {
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 15px 5px 10px #48529944;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.estadio__texto {
+    color: white;
+    font-size: 17px;
+    font-family: helvetica;
+    border-radius: 15px;
+    width: 510px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+
+/* SECCION EQUIPACIÓN */
+
+#equipacion {
+    height: 400px;
+}
+
+.equipacion__card {
+    background-color: blue;
+    border-radius: 15px;
+    box-shadow: 15px 5px 10px #48529944;
+    width: 200px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.equipacion__card--medio {
+    margin-left: 20px;
+}
+
+.equipacion__card--derecha {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
+/* SECCION HISTORIA */
+
+#historia {
+    height: 750px;
+    margin-top: 50px;
+}
+
+.historia__card {
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 15px 5px 10px #48529944;
+    width: 300px;
+    height: 300px;
+}
+
+.historia__texto {
+    color: white;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+
+/* SECCION CONTACTO */
+
+#contacto {
+    height: 450px;
+}
+
+.contacto__formulario {
+    padding-top: 50px;
+    margin-left: 250px;
+}
+
+.contacto__input {
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    display: inline;
+}
+
+.contacto__input--largo {
+    width: 430px;
+    height: 40px;
+    margin-bottom: -10px;
+}
+
+.contacto__textarea {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    display: inline;
+}
+
+.contacto__boton {
+    width: 435px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(to right, darkblue, blue);
+    height: 300px;
+}
+
+.footer__redes {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer__about {
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    clear: both;
+}
+
+.flex__container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex__container--wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header__grid__container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.navbar__grid__container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 10px;
+}
+
+.navbar__grid__item {
+    text-align: center;
+}
+
+.historia__grid__container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.historia__grid__item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.historia__grid__item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer__grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.redes__grid__container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px;
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+    text-align: center;
+}
+
+.redes__grid__item {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.about__grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+}
