@@ -29,6 +29,28 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    animation-name: header__animation;
+    animation-timing-function: ease-in;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header__animation {
+    0% {
+        background: blue;
+    }
+    25% {
+        background: darkblue;
+    }
+    50% {
+        background: blue;
+    }
+    75% {
+        background: darkblue;
+    }
+    100% {
+        background: blue;
+    }
 }
 
 .header__marca {
@@ -51,6 +73,12 @@ header {
     display: inline;
     background: darkblue;
     border-radius: 35px;
+    transition: all 400ms ease;
+}
+
+.header__navbar ul li:hover {
+    transition: all 400ms ease;
+    transform: rotate(5deg);
 }
 
 .header__navbar ul li a {
@@ -78,6 +106,12 @@ header {
     width: 860px;
     margin: 50px;
     margin-bottom: 0px;
+    transition: all 400ms ease;
+}
+
+.plantel__imagen:hover {
+    transition: all 400ms ease;
+    transform: scale(110%);
 }
 
 
@@ -97,6 +131,12 @@ header {
     margin-bottom: 25px;
     margin-left: 50px;
     margin-right: 25px;
+    transition: all 400ms ease;
+}
+
+.estadio__card:hover {
+    transition: all 400ms ease;
+    transform: scale(110%);
 }
 
 .estadio__texto {
@@ -110,6 +150,12 @@ header {
     margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 50px;
+    transition: all 400ms ease;
+}
+
+.estadio__texto:hover {
+    transition: all 400ms ease;
+    transform: scale(110%);
 }
 
 
@@ -128,6 +174,12 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
+    transition: all 400ms ease;
+}
+
+.equipacion__card:hover {
+    transition: all 400ms ease;
+    transform: translateY(-20px);
 }
 
 .equipacion__card--medio {
@@ -153,12 +205,24 @@ header {
     box-shadow: 15px 5px 10px #48529944;
     width: 300px;
     height: 300px;
+    transition: all 400ms ease;
+}
+
+.historia__card:hover {
+    transition: all 400ms ease;
+    transform: scale(110%);
 }
 
 .historia__texto {
     color: white;
     text-align: justify;
     border-radius: 15px;
+    transition: all 400ms ease;
+}
+
+.historia__texto:hover {
+    transition: all 400ms ease;
+    transform: scale(105%);
 }
 
 
@@ -288,6 +352,12 @@ footer {
     width: 100px;
     height: 100px;
     margin: auto;
+    transition: all 400ms ease;
+}
+
+.redes__grid__item:hover {
+    transition: all 400ms ease;
+    transform: rotate(356deg);
 }
 
 .about__grid__container {
