@@ -10,7 +10,7 @@ html {
 header,
 section,
 footer {
-    width: 960px;
+    /* width: 960px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -25,7 +25,7 @@ body {
 header {
     background: linear-gradient(to right, darkblue, blue);
     color: white;
-    height: 100px;
+    /* height: 100px; */
     position: sticky;
     top: 0;
     z-index: 1;
@@ -56,8 +56,9 @@ header {
 .header__marca {
     color: white;
     height: 50px;
-    margin-left: 25px;
-    padding-top: 10px;
+    /* margin-left: 25px;
+    padding-top: 10px; */
+    text-align: center;
 }
 
 .header__navbar ul {
@@ -65,8 +66,8 @@ header {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding-top: 25px;
-    padding-right: 25px;
+    /* padding-top: 25px;
+    padding-right: 25px; */
 }
 
 .header__navbar ul li {
@@ -95,16 +96,16 @@ header {
 /* SECCION PLANTEL */
 
 #plantel {
-    height: 500px;
-    margin-bottom: 50px;
+    /* height: 500px;
+    margin-bottom: 50px; */
 }
 
 .plantel__imagen {
-    background-color: cyan;
+    /* background-color: cyan; */
     border-radius: 15px;
-    box-shadow: 15px 5px 10px #48529944;
-    width: 860px;
-    margin: 50px;
+    /* box-shadow: 15px 5px 10px #48529944; */
+    /* width: 860px; */
+    /* margin: 50px; */
     margin-bottom: 0px;
     transition: all 400ms ease;
 }
@@ -122,15 +123,16 @@ header {
 }
 
 .estadio__card {
-    background-color: red;
+    /* background-color: red; */
     border-radius: 15px;
-    box-shadow: 15px 5px 10px #48529944;
-    width: 300px;
-    height: 300px;
-    margin-top: 50px;
+    /* box-shadow: 15px 5px 10px #48529944; */
+    /* width: 300px;
+    height: 300px; */
+    /* margin-top: 50px;
     margin-bottom: 25px;
     margin-left: 50px;
-    margin-right: 25px;
+    margin-right: 25px; */
+    height: 100%;
     transition: all 400ms ease;
 }
 
@@ -141,15 +143,16 @@ header {
 
 .estadio__texto {
     color: white;
-    font-size: 17px;
+    font-size: 18px;
     font-family: helvetica;
     border-radius: 15px;
-    width: 510px;
+    /* width: 510px;
     height: 300px;
     margin-top: 50px;
     margin-bottom: 25px;
     margin-left: 25px;
-    margin-right: 50px;
+    margin-right: 50px; */
+    text-align: justify;
     transition: all 400ms ease;
 }
 
@@ -162,18 +165,18 @@ header {
 /* SECCION EQUIPACIÓN */
 
 #equipacion {
-    height: 400px;
+    /* height: 400px; */
 }
 
 .equipacion__card {
-    background-color: blue;
+    /* background-color: blue; */
     border-radius: 15px;
-    box-shadow: 15px 5px 10px #48529944;
-    width: 200px;
-    height: 300px;
-    margin-top: 50px;
+    /* box-shadow: 15px 5px 10px #48529944; */
+    /* width: 200px;
+    height: 300px; */
+    /* margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 50px; */
     transition: all 400ms ease;
 }
 
@@ -274,15 +277,15 @@ footer {
 
 .footer__redes {
     padding-top: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .footer__about {
     border-radius: 15px;
-    width: 400px;
+    /* width: 400px;
     height: 50px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     text-align: center;
     color: white;
     clear: both;
@@ -306,9 +309,10 @@ footer {
 }
 
 .navbar__grid__container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 10px;
+    grid-column-gap: 10px; */
+    text-align: center;
 }
 
 .navbar__grid__item {
