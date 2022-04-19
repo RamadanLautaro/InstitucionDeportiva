@@ -10,13 +10,12 @@ html {
 header,
 section,
 footer {
-    /* width: 960px; */
     margin-left: auto;
     margin-right: auto;
 }
 
 body {
-    background-color: rgb(0, 0, 28);
+    background-color: #000068;
 }
 
 
@@ -25,7 +24,6 @@ body {
 header {
     background: linear-gradient(to right, darkblue, blue);
     color: white;
-    /* height: 100px; */
     position: sticky;
     top: 0;
     z-index: 1;
@@ -56,8 +54,6 @@ header {
 .header__marca {
     color: white;
     height: 50px;
-    /* margin-left: 25px;
-    padding-top: 10px; */
     text-align: center;
 }
 
@@ -66,13 +62,11 @@ header {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    /* padding-top: 25px;
-    padding-right: 25px; */
 }
 
 .header__navbar ul li {
     display: inline;
-    background: darkblue;
+    background: #00008b;
     border-radius: 35px;
     transition: all 400ms ease;
 }
@@ -95,24 +89,24 @@ header {
 
 /* SECCION PLANTEL */
 
-#plantel {
-    /* height: 500px;
-    margin-bottom: 50px; */
+.plantel__carousel {
+    z-index: 0;
 }
 
-.plantel__imagen {
-    /* background-color: cyan; */
+.plantel__carousel__imagen {
     border-radius: 15px;
-    /* box-shadow: 15px 5px 10px #48529944; */
-    /* width: 860px; */
-    /* margin: 50px; */
     margin-bottom: 0px;
     transition: all 400ms ease;
 }
 
-.plantel__imagen:hover {
+.plantel__carousel__imagen:hover {
     transition: all 400ms ease;
     transform: scale(110%);
+}
+
+.plantel__carousel__descripcion {
+    background: black;
+    opacity: 0.7;
 }
 
 
@@ -123,15 +117,7 @@ header {
 }
 
 .estadio__card {
-    /* background-color: red; */
     border-radius: 15px;
-    /* box-shadow: 15px 5px 10px #48529944; */
-    /* width: 300px;
-    height: 300px; */
-    /* margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 25px; */
     height: 100%;
     transition: all 400ms ease;
 }
@@ -146,12 +132,6 @@ header {
     font-size: 18px;
     font-family: helvetica;
     border-radius: 15px;
-    /* width: 510px;
-    height: 300px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 50px; */
     text-align: justify;
     transition: all 400ms ease;
 }
@@ -165,18 +145,14 @@ header {
 /* SECCION EQUIPACIÓN */
 
 #equipacion {
-    /* height: 400px; */
+    background-image: url('imagenes/fondo-equipacion.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .equipacion__card {
-    /* background-color: blue; */
     border-radius: 15px;
-    /* box-shadow: 15px 5px 10px #48529944; */
-    /* width: 200px;
-    height: 300px; */
-    /* margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px; */
+    filter: drop-shadow(0 7px 17px rgba(0, 0, 0, 0.7));
     transition: all 400ms ease;
 }
 
@@ -198,16 +174,13 @@ header {
 /* SECCION HISTORIA */
 
 #historia {
-    height: 750px;
     margin-top: 50px;
 }
 
 .historia__card {
-    background-color: red;
     border-radius: 15px;
     box-shadow: 15px 5px 10px #48529944;
-    width: 300px;
-    height: 300px;
+    height: 100%;
     transition: all 400ms ease;
 }
 
@@ -277,15 +250,10 @@ footer {
 
 .footer__redes {
     padding-top: 50px;
-    /* margin-bottom: 50px; */
 }
 
 .footer__about {
     border-radius: 15px;
-    /* width: 400px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto; */
     text-align: center;
     color: white;
     clear: both;
@@ -309,9 +277,6 @@ footer {
 }
 
 .navbar__grid__container {
-    /* display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 10px; */
     text-align: center;
 }
 
@@ -344,18 +309,12 @@ footer {
 }
 
 .redes__grid__container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 100px;
-    grid-column-gap: 100px;
-    grid-row-gap: 30px;
     text-align: center;
 }
 
 .redes__grid__item {
     width: 100px;
     height: 100px;
-    margin: auto;
     transition: all 400ms ease;
 }
 
