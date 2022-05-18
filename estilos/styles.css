@@ -1,332 +1,594 @@
-* {
-    box-sizing: border-box;
-    font-family: helvetica;
-}
+.label__redes--facebook {
+  background-color: #01016a; }
+
+.label__redes--twitter {
+  background-color: #0088dc; }
+
+.label__redes--instagram {
+  background-color: #720094; }
+
+.label__redes--youtube {
+  background-color: #be0000; }
+
+@keyframes header__animation {
+  0% {
+    background: blue; }
+  25% {
+    background: darkblue; }
+  50% {
+    background: blue; }
+  75% {
+    background: darkblue; }
+  100% {
+    background: blue; } }
 
 html {
-    scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 header,
 section,
 footer {
-    margin-left: auto;
-    margin-right: auto;
-}
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Rubik', sans-serif; }
 
 body {
-    background-color: #000068;
-}
+  background-color: #000068;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
-
-/* HEADER */
-
-header {
-    background: linear-gradient(to right, darkblue, blue);
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    animation-name: header__animation;
-    animation-timing-function: ease-in;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-}
-
-@keyframes header__animation {
-    0% {
-        background: blue;
-    }
-    25% {
-        background: darkblue;
-    }
-    50% {
-        background: blue;
-    }
-    75% {
-        background: darkblue;
-    }
-    100% {
-        background: blue;
-    }
-}
+.header {
+  background: linear-gradient(to right, darkblue, blue);
+  color: white;
+  position: sticky;
+  line-height: 100px;
+  top: 0;
+  z-index: 1;
+  animation-name: header__animation;
+  animation-timing-function: ease-in;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite; }
 
 .header__marca {
-    color: white;
-    height: 50px;
-    text-align: center;
-}
+  margin-left: 100px; }
+
+.header__logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 35px;
+  margin-right: 10px; }
+
+.header__titulo {
+  color: white;
+  font-size: 70px;
+  font-weight: 700; }
 
 .header__navbar ul {
-    color: white;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.header__navbar ul li {
-    display: inline;
-    background: #00008b;
-    border-radius: 35px;
-    transition: all 400ms ease;
-}
-
-.header__navbar ul li:hover {
-    transition: all 400ms ease;
-    transform: rotate(5deg);
-}
-
-.header__navbar ul li a {
-    color: white;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    height: 50px;
-    line-height: 50px;
-}
-
-
-/* SECCION PLANTEL */
-
-.plantel__carousel {
-    z-index: 0;
-}
-
-.plantel__carousel__imagen {
-    border-radius: 15px;
-    margin-bottom: 0px;
-    transition: all 400ms ease;
-}
-
-.plantel__carousel__imagen:hover {
-    transition: all 400ms ease;
-    transform: scale(110%);
-}
-
-.plantel__carousel__descripcion {
-    background: black;
-    opacity: 0.7;
-}
-
-
-/* SECCION ESTADIO */
-
-#estadio {
-    height: 400px;
-}
-
-.estadio__card {
-    border-radius: 15px;
-    height: 100%;
-    transition: all 400ms ease;
-}
-
-.estadio__card:hover {
-    transition: all 400ms ease;
-    transform: scale(110%);
-}
-
-.estadio__texto {
-    color: white;
-    font-size: 18px;
-    font-family: helvetica;
-    border-radius: 15px;
-    text-align: justify;
-    transition: all 400ms ease;
-}
-
-.estadio__texto:hover {
-    transition: all 400ms ease;
-    transform: scale(110%);
-}
-
-
-/* SECCION EQUIPACIÓN */
-
-#equipacion {
-    background-image: url('imagenes/fondo-equipacion.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.equipacion__card {
-    border-radius: 15px;
-    filter: drop-shadow(0 7px 17px rgba(0, 0, 0, 0.7));
-    transition: all 400ms ease;
-}
-
-.equipacion__card:hover {
-    transition: all 400ms ease;
-    transform: translateY(-20px);
-}
-
-.equipacion__card--medio {
-    margin-left: 20px;
-}
-
-.equipacion__card--derecha {
-    margin-left: 20px;
-    margin-right: 50px;
-}
-
-
-/* SECCION HISTORIA */
-
-#historia {
-    margin-top: 50px;
-}
-
-.historia__card {
-    border-radius: 15px;
-    box-shadow: 15px 5px 10px #48529944;
-    height: 100%;
-    transition: all 400ms ease;
-}
-
-.historia__card:hover {
-    transition: all 400ms ease;
-    transform: scale(110%);
-}
-
-.historia__texto {
-    color: white;
-    text-align: justify;
-    border-radius: 15px;
-    transition: all 400ms ease;
-}
-
-.historia__texto:hover {
-    transition: all 400ms ease;
-    transform: scale(105%);
-}
-
-
-/* SECCION CONTACTO */
-
-#contacto {
-    height: 450px;
-}
-
-.contacto__formulario {
-    padding-top: 50px;
-    margin-left: 250px;
-}
-
-.contacto__input {
-    width: 200px;
-    height: 20px;
-    margin: 10px;
-    display: inline;
-}
-
-.contacto__input--largo {
-    width: 430px;
-    height: 40px;
-    margin-bottom: -10px;
-}
-
-.contacto__textarea {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    display: inline;
-}
-
-.contacto__boton {
-    width: 435px;
-    height: 50px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-
-/* FOOTER */
-
-footer {
-    background: linear-gradient(to right, darkblue, blue);
-    height: 300px;
-}
-
-.footer__redes {
-    padding-top: 50px;
-}
-
-.footer__about {
-    border-radius: 15px;
-    text-align: center;
-    color: white;
-    clear: both;
-}
-
-.flex__container {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.flex__container--wrap {
-    display: flex;
-    flex-flow: row wrap;
-}
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 50px;
+  text-align: center; }
+  .header__navbar ul li {
+    display: inline; }
+    .header__navbar ul li a {
+      color: white;
+      background: darkblue;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 17px;
+      width: 140px;
+      font-weight: 100;
+      line-height: 50px;
+      transition: all 400ms ease; }
+      .header__navbar ul li a:hover {
+        transition: all 400ms ease;
+        cursor: pointer;
+        color: black !important;
+        background-color: yellow; }
+    .header__navbar ul li .header__navbar--izquierda {
+      border-top-left-radius: 35px;
+      border-bottom-left-radius: 35px; }
+    .header__navbar ul li .header__navbar--derecha {
+      border-top-right-radius: 35px;
+      border-bottom-right-radius: 35px; }
 
 .header__grid__container {
-    display: grid;
-    grid-template-columns: 300px auto;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
 
-.navbar__grid__container {
-    text-align: center;
-}
+#historia {
+  justify-content: center !important;
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
-.navbar__grid__item {
-    text-align: center;
-}
+.historia__logo {
+  border-radius: 15px;
+  filter: drop-shadow(0 7px 17px rgba(0, 0, 0, 0.7));
+  width: 350px;
+  height: 350px;
+  transition: all 400ms ease; }
+  .historia__logo:hover {
+    transition: all 400ms ease;
+    transform: scale(110%); }
+
+.historia__texto {
+  color: white;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
+  margin-top: 25px;
+  transition: all 400ms ease; }
+  .historia__texto:hover {
+    transition: all 400ms ease;
+    transform: scale(110%); }
+
+.historia__texto--destacado {
+  color: yellow; }
 
 .historia__grid__container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
+  display: grid;
+  grid-template-columns: 350px 700px;
+  grid-template-rows: 350px 385px;
+  grid-column-gap: 50px;
+  grid-row-gap: 25px; }
 
-.historia__grid__item2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
+.palmares__grid__container {
+  display: grid;
+  grid-template-columns: 175px 175px 175px 175px 175px 175px;
+  grid-template-rows: 250px 125px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
 
-.historia__grid__item3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+.palmares__trofeo {
+  border-radius: 15px;
+  filter: drop-shadow(0 7px 17px rgba(0, 0, 0, 0.7));
+  width: 175px;
+  height: 250px;
+  transition: all 400ms ease; }
+  .palmares__trofeo:hover {
+    transition: all 400ms ease;
+    transform: translateY(-20px); }
+
+.palmares__cantidad {
+  color: white;
+  font-size: 125px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center; }
+  .palmares__cantidad:hover {
+    transition: all 400ms ease;
+    transform: scale(110%);
+    color: yellow; }
+
+#equipacion {
+  justify-content: center;
+  height: 400px;
+  background-color: white; }
+
+.equipacion__imagen {
+  border-radius: 15px;
+  filter: drop-shadow(0 7px 17px rgba(0, 0, 0, 0.7));
+  width: 230px;
+  height: 400px;
+  transition: all 400ms ease; }
+  .equipacion__imagen:hover {
+    transition: all 400ms ease;
+    transform: translateY(-20px); }
+
+.equipacion__grid__container {
+  display: grid;
+  grid-template-columns: 230px 230px 230px 230px;
+  grid-template-rows: 400px;
+  grid-column-gap: 60px; }
+
+#estadio {
+  justify-content: center !important;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+
+.estadio__titulo {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: yellow;
+  font-size: 117px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 400ms ease; }
+  .estadio__titulo:hover {
+    transition: all 400ms ease;
+    transform: scale(110%); }
+
+.estadio__imagen {
+  border-radius: 15px;
+  filter: drop-shadow(0 7px 17px rgba(0, 0, 0, 0.7));
+  width: 350px;
+  height: 350px;
+  transition: all 400ms ease; }
+  .estadio__imagen:hover {
+    transition: all 400ms ease;
+    transform: scale(110%); }
+
+.estadio__texto {
+  color: white;
+  font-size: 18.2px;
+  line-height: 22px;
+  font-family: helvetica;
+  text-align: justify;
+  transition: all 400ms ease; }
+  .estadio__texto:hover {
+    transition: all 400ms ease;
+    transform: scale(110%); }
+
+.estadio__texto--destacado {
+  color: yellow;
+  font-weight: 900; }
+
+.estadio__mapa {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 1100px;
+  height: 200px;
+  transition: all 400ms ease; }
+  .estadio__mapa:hover {
+    transition: all 400ms ease;
+    transform: scale(110%); }
+
+.mapa {
+  width: 1100px;
+  height: 200px; }
+
+.estadio__grid__container {
+  display: grid;
+  grid-template-columns: 350px 300px 350px;
+  grid-template-rows: 130px 350px 350px 200px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
+
+.estadio__texto1__grid__item {
+  grid-column-start: 2;
+  grid-column-end: 4; }
+
+.estadio__texto2__grid__item {
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+#aplicacion {
+  justify-content: center;
+  background-color: white; }
+
+.aplicacion__titulo {
+  color: blue;
+  font-size: 90px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 125px; }
+
+.aplicacion__mobile {
+  width: 500px;
+  height: 500px; }
+
+.aplicacion__logo {
+  width: 550px;
+  height: 225px; }
+
+.aplicacion__grid__container {
+  display: grid;
+  grid-template-columns: 550px 500px;
+  grid-template-rows: 225px 225px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px; }
+
+.aplicacion__mobile__grid__item {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2; }
+
+.footer {
+  justify-content: center !important;
+  background: linear-gradient(to right, darkblue, blue);
+  height: 545px; }
+
+.footer__redes {
+  margin-top: 50px;
+  text-align: center; }
+
+.label__redes {
+  text-decoration: none;
+  color: white;
+  border-radius: 35px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  margin-top: 10px; }
+
+.footer__sponsors {
+  width: 1350px;
+  height: 193px; }
+
+.footer__about {
+  text-align: center;
+  color: white;
+  clear: both; }
 
 .footer__grid__container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 200px 193px 50px;
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
+  padding-bottom: 50px; }
 
 .redes__grid__container {
-    text-align: center;
-}
+  text-align: center; }
 
 .redes__grid__item {
+  width: 100px;
+  height: 100px;
+  transition: all 400ms ease; }
+  .redes__grid__item:hover {
+    transition: all 400ms ease;
+    transform: rotate(356deg); }
+
+.footer__sponsors__grid__item {
+  grid-column-start: 1;
+  grid-column-end: 5; }
+
+.footer__about__grid__item {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  color: white;
+  text-align: center; }
+
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+  .header {
+    height: 225px; }
+  .header__marca {
+    margin: 0;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .header__logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px; }
+  .header__titulo {
+    font-size: 90px; }
+  .header__navbar {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .header__navbar ul {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 0;
+    float: inherit; }
+    .header__navbar ul li a {
+      font-size: 15px;
+      width: 115px;
+      font-weight: 100; }
+  .header__grid__container {
+    grid-template-columns: 290px 290px;
+    grid-template-rows: 100px 75px;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center; }
+  .historia__logo {
+    width: 190px;
+    height: 190px; }
+  .historia__texto {
+    font-size: 30px;
+    line-height: 27px;
+    margin-top: 15px; }
+  .historia__grid__container {
+    grid-template-columns: 190px 390px;
+    grid-template-rows: 190px 214px;
+    grid-column-gap: 20px; }
+  .palmares__grid__container {
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 114px 100px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+  .palmares__trofeo {
     width: 100px;
-    height: 100px;
-    transition: all 400ms ease;
-}
-
-.redes__grid__item:hover {
-    transition: all 400ms ease;
-    transform: rotate(356deg);
-}
-
-.about__grid__container {
+    height: 114px; }
+  .palmares__cantidad {
+    font-size: 90px; }
+  #equipacion {
+    height: 209px; }
+  .equipacion__imagen {
+    width: 120px;
+    height: 209px;
+    filter: drop-shadow(0 7px 5px rgba(0, 0, 0, 0.7)); }
+  .equipacion__grid__container {
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 209px;
+    grid-column-gap: 40px; }
+  /* SECCION ESTADIO */
+  .estadio__titulo {
+    font-size: 64px;
+    padding-top: 55px; }
+  .estadio__imagen {
+    width: 200px;
+    height: 200px; }
+  .estadio__texto {
+    font-size: 16px;
+    line-height: 16px; }
+  .estadio__mapa {
+    width: 600px; }
+  .mapa {
+    width: 600px; }
+  .estadio__grid__container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-column-gap: 100px;
-    grid-row-gap: 30px;
-}
+    grid-template-columns: 200px 150px 200px;
+    grid-template-rows: 130px 200px 200px 200px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px; }
+  .aplicacion__titulo {
+    font-size: 47px;
+    padding-top: 50px; }
+  .aplicacion__mobile {
+    width: 275px;
+    height: 275px; }
+  .aplicacion__logo {
+    width: 300px;
+    height: 125px; }
+  .aplicacion__grid__container {
+    grid-template-columns: 300px 275px;
+    grid-template-rows: 125px 125px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px; }
+  .footer {
+    height: 450px; }
+  .label__redes {
+    width: 125px; }
+  .footer__sponsors {
+    width: 600px;
+    height: auto; }
+  .footer__grid__container {
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 170px 85px 45px;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    padding-bottom: 50px; }
+  .redes__grid__item {
+    width: 75px;
+    height: 75px; }
+  .footer__about__grid__item {
+    grid-column-start: 1;
+    grid-column-end: 5; } }
+
+@media screen and (max-width: 699px) {
+  .header {
+    height: 225px; }
+  .header__marca {
+    margin: 0;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .header__logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px; }
+  .header__titulo {
+    font-size: 60px; }
+  .header__navbar {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .header__navbar ul {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 0;
+    float: inherit; }
+    .header__navbar ul li a {
+      font-size: 10px;
+      width: 75px;
+      font-weight: 100;
+      height: 40px;
+      line-height: 40px; }
+  .header__grid__container {
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 75px;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center; }
+  #historia {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .historia__logo {
+    width: 125px;
+    height: 125px; }
+  .historia__texto {
+    font-size: 17px;
+    line-height: 1;
+    margin-top: 5px; }
+  .historia__grid__container {
+    grid-template-columns: 125px 200px;
+    grid-template-rows: 125px 110px;
+    grid-column-gap: 25px; }
+  .palmares__grid__container {
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 60px 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px; }
+  .palmares__trofeo {
+    width: 50px;
+    height: auto; }
+  .palmares__cantidad {
+    font-size: 50px; }
+  #equipacion {
+    height: 140px; }
+  .equipacion__imagen {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 7px 5px rgba(0, 0, 0, 0.7)); }
+  .equipacion__grid__container {
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 140px;
+    grid-column-gap: 10px; }
+  #estadio {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .estadio__titulo {
+    font-size: 37px;
+    padding-top: 0px; }
+  .estadio__imagen {
+    width: 110px;
+    height: 110px; }
+  .estadio__texto {
+    font-size: 12px;
+    line-height: 13px; }
+  .estadio__mapa {
+    width: 350px; }
+  .mapa {
+    width: 350px;
+    height: 110px; }
+  .estadio__grid__container {
+    display: grid;
+    grid-template-columns: 110px 80px 110px;
+    grid-template-rows: 50px 110px 110px 110px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px; }
+  .aplicacion__titulo {
+    font-size: 27px;
+    padding-top: 35px; }
+  .aplicacion__mobile {
+    width: 150px;
+    height: 150px; }
+  .aplicacion__logo {
+    width: 175px;
+    height: auto; }
+  .aplicacion__grid__container {
+    grid-template-columns: 175px 150px;
+    grid-template-rows: 50px 75px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px; }
+  .footer {
+    height: 350px; }
+  .label__redes {
+    width: 75px;
+    font-size: 11px; }
+  .footer__sponsors {
+    width: 350px;
+    height: auto; }
+  .footer__grid__container {
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 150px 50px 75px;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+    padding-bottom: 25px; }
+  .redes__grid__item {
+    width: 60px;
+    height: 60px; }
+  .footer__about__grid__item {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 12px; } }

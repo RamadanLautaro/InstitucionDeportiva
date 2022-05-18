@@ -10,200 +10,224 @@
     <title>Chelsea FC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="icon" href="./imagenes/chelsea.png">
-    <link rel="stylesheet" href="estilos/styles2.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header row pt-3 pb-3">
-        <div class="header__marca col-12 col-md-4">
-            <h1>Chelsea FC</h1>
+    <!-- HEADER -->
+    <header class="header header__grid__container">
+        <div class="header__marca">
+            <img class="header__logo" src="imagenes/chelsea.png" alt="Chelsea Logo." title="Chelsea Logo.">
+            <span class="header__titulo">Chelsea FC</span>
         </div>
-        <nav class="header__navbar col-12 col-md-8 pr-5 pl-5">
-            <ul class="navbar__grid__container row">
-                <li class="col"><a href="#plantel">Plantel</a></li>
-                <li class="col"><a href="#estadio">Estadio</a></li>
-                <li class="col"><a href="#equipacion">Equipación</a></li>
-                <li class="col"><a href="#historia">Historia</a></li>
-                <li class="col"><a data-toggle="modal" data-target="#formularioContacto">Contacto</a></li>
+        <nav class="header__navbar">
+            <ul class="navbar__grid__container">
+                <li><a class="header__navbar--izquierda" href="index.html">INICIO</a></li>
+                <li><a href="#historia">HISTORIA</a></li>
+                <li><a href="#equipacion">EQUIPACIÓN</a></li>
+                <li><a href="#estadio">ESTADIO</a></li>
+                <li><a class="header__navbar--derecha" data-toggle="modal" data-target="#formularioContacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- BANNER -->
     <div class="row">
         <div class="col-12">
-            <img class="table-responsive" src="imagenes/chelsea-banner.jpg" alt="Chelsea banner...">
+            <img class="table-responsive" src="imagenes/chelsea-banner.png" alt="Chelsea Campeón Champions League." title="Chelsea Campeón Champions League.">
         </div>
     </div>
 
-    <section id="plantel" class="flex__container row mt-5 pb-5 pt-5 pl-5 pr-5 justify-content-center">
-        <div class="col-12 col-md-8">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade shadow shadow-lg plantel__carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imagenes/plantel1.jpg" class="d-block w-100 plantel__carousel__imagen" alt="Chelsea plantel oficial...">
-                        <div class="carousel-caption d-none d-md-block plantel__carousel__descripcion">
-                            <h3>Plantel</h3>
-                            <p>Foto oficial del equipo. Temporada 2021/2022.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/plantel2.jpg" class="d-block w-100 plantel__carousel__imagen" alt="Chelsea Champions Of Europe 2020/21...">
-                        <div class="carousel-caption d-none d-md-block plantel__carousel__descripcion">
-                            <h3>Champions League</h3>
-                            <p>Levantando el trofeo. Final Oporto 2021.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/plantel3.jpg" class="d-block w-100 plantel__carousel__imagen" alt="Chelsea vs Manchester City, Final...">
-                        <div class="carousel-caption d-none d-md-block plantel__carousel__descripcion">
-                            <h3>Winning Moment</h3>
-                            <p>Foto histórica. Chelsea 1 - 0 Manchester City.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </button>
-            </div>
+    <!-- SECCIÓN HISTORIA -->
+    <section id="historia" class="historia__grid__container">
+        <div>
+            <img class="historia__logo" src="imagenes/chelsea.png" alt="Chelsea Logo." title="Chelsea Logo."></img>
         </div>
-    </section>
-
-    <section id="estadio" class="flex__container row mt-5 pl-5 pr-5 justify-content-center">
-        <div class="col-6 col-md-3">
-            <img class="estadio__card table-responsive shadow-lg" src="imagenes/estadio.jpg" alt="Stamford Bridge..."></img>
-        </div>
-        <div class="estadio__texto col-6 col-md-5 pl-5 table-responsive">
-            <p>El Stamford Bridge es un estadio de fútbol en el distrito de Hammersmith y Fulham, en Londres, Inglaterra, y es el hogar del Chelsea Football Club. El estadio se encuentra ubicado en el área urbana de Walham Green y es apodado como The Bridge
-                por los seguidores del club. <br><br> La capacidad del estadio es de 41.841 espectadores, lo que lo convierte en el décimo estadio con mayor capacidad de la Premier League. Inaugurado en 1877, el estadio fue inicialmente construido para
-                que fuera utilizado por el Fulham, pero este no aceptó, lo que obligó a fundar un equipo de fútbol específico, el London Athletics Club, que lo usó hasta 1905, cuando el nuevo propietario Henry Augustus Mears refundó el mencionado equipo
-                con el nombre de Chelsea Football Club. El Chelsea ha jugado como local en este estadio desde aquel entonces.</p>
-        </div>
-    </section>
-
-    <section style="background-image: url('imagenes/fondo-equipacion.jpg')" id="equipacion" class="flex__container--wrap row mt-5 pt-5 pl-5 pr-5 justify-content-center">
-        <div class="col-3 pt-4 pt-md-5 col-md-2">
-            <img src="imagenes/equipacion1.png" class="equipacion__card table-responsive" alt="Chelsea equipación local..."></img>
-        </div>
-        <div class="col-3 pt-4 pt-md-5 col-md-2">
-            <img src="imagenes/equipacion2.png" class="equipacion__card table-responsive" alt="Chelsea equipación visitante..."></img>
-        </div>
-        <div class="col-3 pt-4 pt-md-5 col-md-2">
-            <img src="imagenes/equipacion3.png" class="equipacion__card table-responsive" alt="Chelsea tercera equipación..."></img>
-        </div>
-        <div class="col-3 pt-4 pt-md-5 col-md-2">
-            <img src="imagenes/equipacion4.png" class="equipacion__card table-responsive" alt="Chelsea equipación alternativa..."></img>
-        </div>
-    </section>
-
-    <section id="historia" class="row pl-5 pr-5 justify-content-center">
-        <div class="col-6 order-1 col-md-3 order-md-1">
-            <img src="imagenes/historia1.png" class="historia__card table-responsive shadow-lg" alt="Stamford Bridge..."></img>
-        </div>
-        <div class="col-12 order-3 col-md-5 order-md-2 mt-5 mt-md-0 historia__texto table-responsive">
-            <p>Stamford Bridge es uno de los estadios de fútbol más antiguos de toda Inglaterra y es la casa del Chelsea FC desde nuestra fundación en 1905. Abrió sus puertas el 28 de abril de 1877 a cualquier deporte que lo necesitara. Por aquel entonces,
-                el atletismo era la prioridad. Durante los primeros 27 años fue utilizado casi exclusivamente para la tradición popular victoriana de hacer reuniones entre los atletas, organizadas por el London Athletic Club. Pero en 1904 cambiaron los
-                dueños del terreno y la historia de Stamford Bridge cambió para siempre. Henry Ausgustus Mears y su hermano, J.T. Mears, tenían el deseo de albergar el deporte del cual se habían enamorado y que estaba creciendo abruptamente por todo Londres:
-                el fútbol. Para eso, además de hacerse con las tierras, adquirieron un terreno adicional que solía ser un mercado. El nuevo estadio fue diseñado por el famoso arquitecto y especialista Archibald Leicht. El escocés le dio su toque a la
-                tribuna principal, la East Stand de 120 yardas y en la que entran 5.000 espectadores: un techo a dos aguas que era el factor distintivo de Stamford Bridge por aquel entonces.</p>
-        </div>
-        <div class="col-12 order-4 col-md-5 order-md-3 mt-3 mt-md-5 table-responsive historia__texto">
-            <p>El nuevo estadio debutó con una victoria 4-0 en un amistoso frente al Liverpool, en septiembre de 1905, y fue acompañado por el primer programa gráfico que acompañó un partido en Londres: cuatro páginas enteras que sirvieron como empujón para
-                el entusiasmo de la ciudad por el fútbol. El éxito vino sorpresivamente rápido: el partido con Manchester United en Viernes Santo significaba un choque crucial que terminó con 67 mil personas en la cancha. El ascenso a la Primera División
-                se logró en 1907 y durante la siguiente campaña los recientemente apodados "Los Pensioners" rompieron récords de cantidad de espectadores en Gran Bretaña. Incluso uno de los hombres más populares del momento, George Robey, firmó con el
-                equipo. El 9 de noviembre de 1907 se disputó el primer derbi de Londres en Primera División, que terminó en victoria para el Chelsea por 2-1 sobre el Arsenal. Con un resultado similar terminó nuestro primer encuentro con el Tottenham,
-                el 18 de diciembre de 1909.
+        <div class="historia__texto">
+            <p>
+                El <span class="historia__texto--destacado">Chelsea Football Club</span> es un club londinense que integra el <span class="historia__texto--destacado">big six</span> de la Premier League. El equipo blue es el actual <span class="historia__texto--destacado">campeón</span>                de Europa y del mundo.
             </p>
         </div>
-        <div class="col-6 order-2 col-md-3 order-md-4">
-            <img src="imagenes/historia2.jpg" class="historia__card table-responsive shadow-lg" alt="Stamford Bridge..."></img>
+        <div class="palmares__grid__container">
+            <div>
+                <img src="imagenes/trofeo1.png" class="palmares__trofeo" alt="Trofeo Premier League." title="Trofeo Premier League."></img>
+            </div>
+            <div>
+                <img src="imagenes/trofeo2.png" class="palmares__trofeo" alt="Trofeo Carabao Cup." title="Trofeo Carabao Cup."></img>
+            </div>
+            <div>
+                <img src="imagenes/trofeo3.png" class="palmares__trofeo" alt="Trofeo FA Cup." title="Trofeo FA Cup."></img>
+            </div>
+            <div>
+                <img src="imagenes/trofeo4.png" class="palmares__trofeo" alt="Trofeo UEFA Europa League." title="Trofeo UEFA Europa League."></img>
+            </div>
+            <div>
+                <img src="imagenes/trofeo5.png" class="palmares__trofeo" alt="Trofeo UEFA Champions League." title="Trofeo UEFA Champions League."></img>
+            </div>
+            <div>
+                <img src="imagenes/trofeo6.png" class="palmares__trofeo" alt="Trofeo Mundial de Clubes." title="Trofeo Mundial de Clubes."></img>
+            </div>
+            <div class="palmares__cantidad">6</div>
+            <div class="palmares__cantidad">5</div>
+            <div class="palmares__cantidad">8</div>
+            <div class="palmares__cantidad">2</div>
+            <div class="palmares__cantidad">2</div>
+            <div class="palmares__cantidad">1</div>
         </div>
     </section>
 
-    <footer class="row mt-5 justify-content-center">
+    <!-- SECCIÓN EQUIPACIÓN -->
+    <div class="row">
         <div class="col-12">
-            <div class="redes__grid__container row pt-5 justify-content-center">
-                <div class="col-3 col-md-3">
-                    <a href="https://www.facebook.com/ChelseaFC" target="blank">
-                        <img class="redes__grid__item" src="imagenes/redes_facebook_logo.png" alt="Chelsea Facebook..."></img>
-                        <div class="mt-3 label__redes label__redes--facebook">FACEBOOK</div>
-                    </a>
-                </div>
-                <div class="col-3 col-md-3">
-                    <a href="https://twitter.com/ChelseaFC" target="blank">
-                        <img class="redes__grid__item" src="imagenes/redes_twitter_logo.png" alt="Chelsea Twitter..."></img>
-                        <div class="mt-3 label__redes label__redes--twitter">TWITTER</div>
-                    </a>
-                </div>
-                <div class="col-3 col-md-3">
-                    <a href="https://www.instagram.com/ChelseaFC" target="blank">
-                        <img class="redes__grid__item" src="imagenes/redes_instagram_logo.png" alt="Chelsea Instagram..."></img>
-                        <div class="mt-3 label__redes label__redes--instagram">INSTAGRAM</div>
-                    </a>
-                </div>
-                <div class="col-3 col-md-3">
-                    <a href="https://www.youtube.com/ChelseaFC" target="blank">
-                        <img class="redes__grid__item" src="imagenes/redes_youtube_logo.png" alt="Chelsea Youtube..."></img>
-                        <div class="mt-3 label__redes label__redes--youtube">YOUTUBE</div>
-                    </a>
-                </div>
-            </div>
+            <img class="table-responsive" src="imagenes/borde-superior.png" alt="Border superior." title="Borde superior.">
         </div>
-        <nav class="footer__about about__grid__container row justify-content-center">
-            <div class="col-12">
-                <div>Términos y condiciones &nbsp;&nbsp; • &nbsp;&nbsp; Políticas de privacidad</div>
-                <div>© 2020 Chelsea FC</div>
-            </div>
-        </nav>
+    </div>
+    <section id="equipacion" class="equipacion__grid__container">
+        <div>
+            <img src="imagenes/equipacion1.png" class="equipacion__imagen" alt="Equipación Local." title="Equipación Local."></img>
+        </div>
+        <div>
+            <img src="imagenes/equipacion2.png" class="equipacion__imagen" alt="Equipación Visitante." title="Equipación Visitante."></img>
+        </div>
+        <div>
+            <img src="imagenes/equipacion3.png" class="equipacion__imagen" alt="Tercera Equipación." title="Tercera Equipación."></img>
+        </div>
+        <div>
+            <img src="imagenes/equipacion4.png" class="equipacion__imagen" alt="Equipación Alternativa." title="Equipación Alternativa."></img>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col-12">
+            <img class="table-responsive" src="imagenes/borde-inferior.png" alt="Border inferior." title="Borde inferior.">
+        </div>
+    </div>
+
+    <!-- SECCIÓN ESTADIO -->
+    <section id="estadio" class="estadio__grid__container">
+        <div class="estadio__titulo">
+            STAMFORD BRIDGE
+        </div>
+        <div>
+            <img src="imagenes/historia1.png" class="estadio__imagen" alt="Antiguo Stamford Bridge." title="Antiguo Stamford Bridge."></img>
+        </div>
+        <div class="estadio__texto1__grid__item estadio__texto table-responsive">
+            <p><span class="estadio__texto--destacado">Stamford Bridge</span> es uno de los estadios de fútbol más antiguos de toda Inglaterra y es la casa del <span class="estadio__texto--destacado">Chelsea FC</span> desde nuestra fundación en 1905. Abrió
+                sus puertas el 28 de abril de 1877 a cualquier deporte que lo necesitara. Por aquel entonces, el atletismo era la prioridad. Durante los primeros 27 años fue utilizado casi exclusivamente para la tradición popular victoriana de hacer reuniones
+                entre los atletas, organizadas por el London Athletic Club. Pero en 1904 cambiaron los dueños del terreno y la historia de <span class="estadio__texto--destacado">Stamford Bridge</span> cambió para siempre. Henry Ausgustus Mears y su hermano,
+                J.T. Mears, tenían el deseo de albergar el deporte del cual se habían enamorado y que estaba creciendo abruptamente por todo Londres: el fútbol. Para eso, además de hacerse con las tierras, adquirieron un terreno adicional que solía ser
+                un mercado. El nuevo estadio fue diseñado por el famoso arquitecto y especialista Archibald Leicht. El escocés le dio su toque a la tribuna principal, la <span class="estadio__texto--destacado">East Stand</span> de 120 yardas y en la que
+                entran 5.000 espectadores: un techo a dos aguas que era el factor distintivo de <span class="estadio__texto--destacado">Stamford
+                Bridge</span> por aquel entonces.</p>
+        </div>
+        <div class="estadio__texto2__grid__item estadio__texto table-responsive">
+            <p>El nuevo estadio debutó con una <span class="estadio__texto--destacado">victoria 4-0</span> en un amistoso frente al <span class="estadio__texto--destacado">Liverpool</span>, en septiembre de 1905, y fue acompañado por el primer programa gráfico
+                que acompañó un partido en Londres: cuatro páginas enteras que sirvieron como empujón para el entusiasmo de la ciudad por el fútbol. El éxito vino sorpresivamente rápido: el partido con <span class="estadio__texto--destacado">Manchester United</span>                en Viernes Santo significaba un choque crucial que terminó con <span class="estadio__texto--destacado">67 mil</span> personas en la cancha. El <span class="estadio__texto--destacado">ascenso a la Primera División</span> se logró en 1907
+                y durante la siguiente campaña los recientemente apodados "Los Pensioners" rompieron récords de cantidad de espectadores en Gran Bretaña. Incluso uno de los hombres más populares del momento, George Robey, firmó con el equipo. El 9 de
+                noviembre de 1907 se disputó el primer <span class="estadio__texto--destacado">derbi de Londres</span> en Primera División, que terminó en victoria para el Chelsea por <span class="estadio__texto--destacado">2-1</span> sobre el
+                <span class="estadio__texto--destacado">Arsenal</span>. Con un resultado similar terminó nuestro primer encuentro con el <span class="estadio__texto--destacado">Tottenham</span>, el 18 de diciembre de 1909.
+            </p>
+        </div>
+        <div>
+            <img src="imagenes/historia2.jpg" class="estadio__imagen" alt="Actual Stamford Bridge." title="Actual Stamford Bridge."></img>
+        </div>
+        <div class="estadio__mapa">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474872.833155786!2d-2.7984691230476115!3d52.716527662910565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f864b976f3d%3A0x48aa38781ea565f8!2sStamford%20Bridge!5e0!3m2!1ses!2sar!4v1652736459780!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- SECCIÓN APLICACIÓN -->
+    <div class="row">
+        <div class="col-12">
+            <img class="table-responsive" src="imagenes/borde-superior.png" alt="Borde Superior." title="Borde Superior.">
+        </div>
+    </div>
+    <section id="aplicacion" class="aplicacion__grid__container">
+        <div class="aplicacion__titulo">
+            APP OFICIAL
+        </div>
+        <div class="aplicacion__mobile__grid__item">
+            <img src="imagenes/app-mobile.png" class="aplicacion__mobile" alt="The 5th Stand App." title="The 5th Stand App."></img>
+        </div>
+        <div>
+            <img src="imagenes/app-logo.png" class="aplicacion__logo" alt="The 5th Stand Logo." title="The 5th Stand Logo."></img>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer footer__grid__container">
+        <div class="footer__redes">
+            <a href="https://www.facebook.com/ChelseaFC" target="blank">
+                <img class="redes__grid__item" src="imagenes/redes_facebook_logo.png" alt="Facebook." title="Facebook."></img>
+                <div class="label__redes label__redes--facebook">FACEBOOK</div>
+            </a>
+        </div>
+        <div class="footer__redes">
+            <a href="https://twitter.com/ChelseaFC" target="blank">
+                <img class="redes__grid__item" src="imagenes/redes_twitter_logo.png" alt="Twitter." title="Twitter."></img>
+                <div class="label__redes label__redes--twitter">TWITTER</div>
+            </a>
+        </div>
+        <div class="footer__redes">
+            <a href="https://www.instagram.com/ChelseaFC" target="blank">
+                <img class="redes__grid__item" src="imagenes/redes_instagram_logo.png" alt="Instagram." title="Instagram."></img>
+                <div class="label__redes label__redes--instagram">INSTAGRAM</div>
+            </a>
+        </div>
+        <div class="footer__redes">
+            <a href="https://www.youtube.com/ChelseaFC" target="blank">
+                <img class="redes__grid__item" src="imagenes/redes_youtube_logo.png" alt="YouTube." title="YouTube."></img>
+                <div class="label__redes label__redes--youtube">YOUTUBE</div>
+            </a>
+        </div>
+        <div class="footer__sponsors__grid__item">
+            <img class="footer__sponsors" src="imagenes/sponsors.png " alt="Sponsors." title="Sponsors."></img>
+        </div>
+        <div class="footer__about__grid__item">
+            Términos y condiciones &nbsp;&nbsp; • &nbsp;&nbsp; Políticas de privacidad <br> © 2020 Chelsea FC
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
 </body>
 
 <!-- FORMULARIO CONTACTO -->
-<div class="modal" id="formularioContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="formularioContacto" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="border-radius: 30px;">
+        <div class="modal-content">
             <div class="modal-header">
                 <div>
-                    <h5 class="modal-title formularioContactoTitulo" id="exampleModalLabel">CONTACTAME</h5>
+                    <h5 class="modal-title" id="contactoModalLabel">CONTACTANOS</h5>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true ">&times;</span>
                 </button>
             </div>
             <form class="was-validated">
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="formularioContactoNombre" class="form-label formularioContactoSubtitulo">Nombre</label>
+                        <label for="formularioContactoNombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control is-valid" id="formularioContactoNombre" placeholder="Ingrese su nombre..." required>
                     </div>
                     <div class="mb-3">
-                        <label for="formularioContactoEmail" class="form-label formularioContactoSubtitulo">Email</label>
-                        <input type="email" class="form-control is-valid" id="formularioContactoEmail" placeholder="Ingrese su email..." required>
+                        <label for="formularioContactoEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control is-valid " id="formularioContactoEmail" placeholder="Ingrese su email..." required>
                     </div>
                     <div class="mb-3">
-                        <label for="formularioContactoMensaje" class="form-label formularioContactoSubtitulo">Mensaje</label>
+                        <label for="formularioContactoMensaje" class="form-label">Mensaje</label>
                         <textarea class="form-control" id="formularioContactoMensaje" placeholder="Deje su mensaje..." rows="7" required></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="w-50 m-0 p-3">
-                        <button type="button" class="btn btn-secondary w-100 formularioContactoBotonCancelar" data-dismiss="modal" style="float: left;">CERRAR</button>
+                        <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">CERRAR</button>
                     </div>
                     <div class="w-50 m-0 p-3">
-                        <button type="submit" class="btn btn-primary w-100 formularioContactoBotonEnviar" onclick="enviarFormulario()">ENVIAR</button>
+                        <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
                     </div>
                 </div>
             </form>
